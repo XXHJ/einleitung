@@ -27,6 +27,7 @@ const _GRAD = {
 };
 
 export const technologie = [
+    // 技能
     {
         grad: _GRAD['3'], // 程度
         content: ''
@@ -38,8 +39,36 @@ export const technologie = [
 ];
 
 export const experience = [
+    // 经历
     {
         timeSlot: '',
-        company: ''
+        company: '',
+        responsibility: '', // 亮点
+        position: '',
+        content: ''
     }
 ];
+
+const _SCHOOL_TYPE = {
+    '1': '',
+    '2': '',
+    '3': '',
+    '4': ''
+}
+export const education = [
+    // 教育
+    {
+        time: '',
+        type: _SCHOOL_TYPE['2'],
+        school: ''
+    }
+]
+
+export const recommend = {
+    // 推荐
+    content: [
+        '',
+        '',
+        ''
+    ]
+}
