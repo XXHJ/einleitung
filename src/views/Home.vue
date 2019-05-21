@@ -1,20 +1,22 @@
 <template>
   <div class="home">
-    <Header/>
-    <Footer/>
+    <h1>Home</h1>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Header from '#/layout/header.vue'
-import Footer from '#/layout/footer.vue'
 
 export default {
-  name: 'home',
-  components: {
-    Header,
-    Footer
-  }
 }
 </script>
+
+<style lang="scss" scoped>
+.home {
+  width: 960px;
+  height: 1000px;
+  text-align: center;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+</style>
