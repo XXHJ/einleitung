@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>About</h1>
+    <h1>基础条款</h1>
   </div>
 </template>
 <style lang="scss" scoped>
