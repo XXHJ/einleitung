@@ -1,13 +1,12 @@
 export const baseInfo = {
     // 基础个人信息
-    name: '', // 姓名
-    age: '',
-    sex: '',
-    adresse: '',
-    geburtsort: '', // 籍贯
-    email: '',
-    tel: '',
-    bildungsstand: '',
+    name: '姓名：肖雄', // 姓名
+    age: '年龄：27',
+    sex: '性别：男',
+    adresse: '地址：北京市昌平区回龙观东大街龙锦苑东二区',
+    geburtsort: '籍贯：湖北·武汉', // 籍贯
+    email: '邮箱：xiong.xiao@aispeech.com',
+    tel: '手机：18672360115',
     imageUrl: ''
 };
 

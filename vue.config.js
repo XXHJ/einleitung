@@ -16,6 +16,7 @@ module.exports = {
             .set('icon', resolve('src/assets/icon'))
             .set('utils', resolve('src/utils'))
             .set('model', resolve('src/model'))
+            .set('config', resolve('src/config'))
             .set('api', resolve('src/api'));
 
         config.module
