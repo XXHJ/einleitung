@@ -6,20 +6,20 @@
     <!-- 基础信息 -->
     <!-- <Baseinfo></Baseinfo> -->
     <!-- 时间线 -->
-    <div>
+    <div class="dist">
       <Timeline/>
     </div>
     <!-- 进度条 -->
-    <div>
+    <div class="dist">
       <Progress/>
       <Progress type="circle"/>
     </div>
     <!-- 圆饼进度条 -->
-    <div>
+    <div class="dist">
       <Card/>
     </div>
     <!-- 卡片 -->
-    <div>
+    <div class="dist">
       <Carousel/>
     </div>
     <!-- 图片加载 -->
@@ -61,13 +61,15 @@ export default {
 <style lang="scss" scoped>
 .home {
   width: 960px;
-  height: 1000px;
   box-sizing: border-box;
   padding: 8px;
   &-title {
     font-size: 20px;
     font-weight: 600;
     text-align: left;
+  }
+  .dist {
+    margin: 16px 0;
   }
 }
 </style>

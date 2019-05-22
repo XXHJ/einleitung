@@ -24,7 +24,6 @@ export default {
 <style lang="scss" scoped>
 .about {
   width: 960px;
-  height: 1000px;
   box-sizing: border-box;
   padding: 8px;
 }
