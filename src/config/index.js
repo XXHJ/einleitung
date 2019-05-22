@@ -1,6 +1,13 @@
-import { baseInfo, erwartungen } from './baseInfo'
+import {
+    baseInfo,
+    erwartungen,
+    urls,
+    experience
+} from './baseInfo'
 
 export default {
     baseInfo,
-    erwartungen
+    erwartungen,
+    urls,
+    experience
 }

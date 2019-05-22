@@ -1,4 +1,6 @@
+import image from '#/image';
 <template>
+  <!-- 卡片-跑马灯 -->
   <el-carousel
     :interval="4000"
     type="card"
@@ -6,19 +8,25 @@
     trigger="click"
   >
     <el-carousel-item
-      v-for="item in 6"
+      v-for="item in urls"
       :key="item"
     >
-      <h3 class="medium">{{ item }}</h3>
+      <img
+        :src="item"
+        alt
+        srcset
+      >
     </el-carousel-item>
   </el-carousel>
 </template>
 
 <script>
+import Config from 'config'
+
 export default {
   data () {
     return {
-
+      urls: Config.urls
     };
   }
 }

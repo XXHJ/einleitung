@@ -4,19 +4,7 @@
       <em>第一部分</em>
     </div>
     <!-- 基础信息 -->
-    <!-- <div class="home-base">
-      <div class="home-base-info">
-        <div
-          class="base-item"
-          v-for="(item, index) in baseInfo"
-          :key="index"
-        >{{item}}</div>
-      </div>
-      <div class="home-base-image">
-        <div class="images"></div>
-      </div>
-    </div>-->
-    <Baseinfo></Baseinfo>
+    <!-- <Baseinfo></Baseinfo> -->
     <!-- 时间线 -->
     <div>
       <Timeline/>

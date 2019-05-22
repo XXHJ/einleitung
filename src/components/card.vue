@@ -3,25 +3,19 @@
   <el-row>
     <el-col
       :span="8"
-      v-for="(o, index) in 2"
+      v-for="(o, index) in 3"
       :key="o"
-      :offset="index > 0 ? 2 : 0"
     >
-      <el-card :body-style="{ padding: '0px' }">
+      <el-card class="box-card">
         <img
           src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
           class="image"
         >
-        <div style="padding: 14px;">
-          <span>好吃的汉堡</span>
-          <div class="bottom clearfix">
-            <time class="time">{{ currentDate }}</time>
-            <el-button
-              type="text"
-              class="buttons"
-            >操作按钮</el-button>
-          </div>
-        </div>
+        <div
+          v-for="o in 2"
+          :key="o"
+          class="text item"
+        >{{'列表内容 ' + o }}</div>
       </el-card>
     </el-col>
   </el-row>
@@ -64,5 +58,11 @@ export default {
 
 .clearfix:after {
   clear: both;
+}
+.box-card {
+  width: 313px;
+  .item {
+    padding: 8px 0;
+  }
 }
 </style>

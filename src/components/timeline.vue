@@ -2,39 +2,27 @@
   <!-- 时间线 -->
   <el-timeline>
     <el-timeline-item
-      timestamp="2018/4/12"
+      v-for="(item, index) in lineList"
+      :key="index"
+      :timestamp="item.timeSlot"
       placement="top"
     >
       <el-card>
-        <h4>更新 Github 模板</h4>
-        <p>王小虎 提交于 2018/4/12 20:46</p>
-      </el-card>
-    </el-timeline-item>
-    <el-timeline-item
-      timestamp="2018/4/3"
-      placement="top"
-    >
-      <el-card>
-        <h4>更新 Github 模板</h4>
-        <p>王小虎 提交于 2018/4/3 20:46</p>
-      </el-card>
-    </el-timeline-item>
-    <el-timeline-item
-      timestamp="2018/4/2"
-      placement="top"
-    >
-      <el-card>
-        <h4>更新 Github 模板</h4>
-        <p>王小虎 提交于 2018/4/2 20:46</p>
+        <h4>{{item.company}} - {{item.position}}</h4>
+        <p>{{item.responsibility}}</p>
+        <p>{{item.content}}</p>
       </el-card>
     </el-timeline-item>
   </el-timeline>
 </template>
 
 <script>
+import Config from 'config'
 export default {
   data () {
-    return {};
+    return {
+      lineList: Config.experience
+    };
   }
 }
 </script>
