@@ -4,11 +4,11 @@
     <el-col
       :span="8"
       v-for="(o, index) in 3"
-      :key="o"
+      :key="o + index"
     >
       <el-card class="box-card">
         <img
-          src="https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png"
+          :src="url"
           class="image"
         >
         <div
@@ -25,7 +25,7 @@
 export default {
   data () {
     return {
-      currentDate: new Date(),
+      url: 'https://shadow.elemecdn.com/app/element/hamburger.9cf7b091-55e9-11e9-a976-7f4d0b07eef6.png'
     };
   }
 }

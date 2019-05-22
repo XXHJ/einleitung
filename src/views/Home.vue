@@ -12,6 +12,7 @@
     <!-- 进度条 -->
     <div>
       <Progress/>
+      <Progress type="circle"/>
     </div>
     <!-- 圆饼进度条 -->
     <div>
@@ -22,7 +23,11 @@
       <Carousel/>
     </div>
     <!-- 图片加载 -->
-    <Images/>
+    <Images
+      v-for="(url, index) in urls"
+      :key="index"
+      :url="url"
+    />
   </div>
 </template>
 
@@ -47,7 +52,7 @@ export default {
   },
   data () {
     return {
-
+      urls: Config.urls
     };
   }
 }

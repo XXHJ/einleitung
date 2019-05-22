@@ -1,4 +1,3 @@
-import image from '#/image';
 <template>
   <!-- 卡片-跑马灯 -->
   <el-carousel
@@ -11,19 +10,19 @@ import image from '#/image';
       v-for="item in urls"
       :key="item"
     >
-      <img
-        :src="item"
-        alt
-        srcset
-      >
+      <Images :url="item"/>
     </el-carousel-item>
   </el-carousel>
 </template>
 
 <script>
-import Config from 'config'
+import Config from 'config';
+import Images from '#/image';
 
 export default {
+  components: {
+    Images
+  },
   data () {
     return {
       urls: Config.urls
