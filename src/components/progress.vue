@@ -1,6 +1,7 @@
 <template>
   <!-- 进度条 -->
   <div>
+    <!-- 直线进度 -->
     <div
       v-show="type === 'line'"
       v-for="(item, index) in bookList"
@@ -14,6 +15,7 @@
         color="rgba(19, 206, 102, .8)"
       ></el-progress>
     </div>
+    <!-- 圆环进度 -->
     <div v-show="type === 'circle'">
       <el-progress
         v-for="(item, index) in bookList"

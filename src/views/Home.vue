@@ -62,7 +62,6 @@ export default {
 .home {
   width: 960px;
   height: 1000px;
-  // border: 1px solid #000;
   box-sizing: border-box;
   padding: 8px;
   &-title {

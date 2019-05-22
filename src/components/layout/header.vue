@@ -21,7 +21,6 @@ export default {
 .le-header {
   width: 100%;
   height: 60px;
-  // border: 1px solid #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
