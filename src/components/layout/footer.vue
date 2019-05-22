@@ -1,6 +1,10 @@
 <template>
   <div class="le-footer">
-    <div>相关地址</div>
+    <div>
+      <p>githab</p>
+      <p>简书</p>
+      <p>知乎</p>
+    </div>
   </div>
 </template>
 
